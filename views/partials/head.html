@@ -50,6 +50,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/180.png">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -83,14 +84,20 @@
       {% include "/assets/css/blog.min.css" %}
     {% elif doc.pod_path == '/content/pages/home.html' %}
       {% include "/assets/css/home.min.css" %}
+    {% elif doc.view == '/views/about.html' %}
+      {% include "/assets/css/about.min.css" %}
     {% elif doc.view == '/views/about-overview.html' %}
       {% include "/assets/css/about-overview.min.css" %}
     {% elif doc.view == '/views/about-how.html' %}
       {% include "/assets/css/about-how.min.css" %}
+    {% elif doc.view == '/views/about-uses.html' %}
+      {% include "/assets/css/about-uses.min.css" %}
     {% elif doc.view == '/views/about-who.html' %}
       {% include "/assets/css/about-who.min.css" %}
     {% elif doc.view == '/views/about-who-vertical.html' %}
       {% include "/assets/css/about-who-vertical.min.css" %}
+    {% elif doc.view == '/views/about-benefits.html' %}
+      {% include "/assets/css/about-benefits.min.css" %}
     {% elif doc.view == '/views/amp-ads.html' %}
       {% include "/assets/css/amp-ads.min.css" %}
     {% elif doc.view == '/views/design-principles.html' %}
