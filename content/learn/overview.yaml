@@ -4,7 +4,6 @@ $titles:
 $order: 0
 class: about-overview bg-triangle-secondary
 $view: /views/about-overview.html
-$parent: /content/learn/about.yaml
 
 components:
   - youtube

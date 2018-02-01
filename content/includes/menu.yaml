@@ -1,5 +1,5 @@
 menu:
-  - href: /content/learn/about.html
+  - href: /content/learn/overview.html
     copy@: About
     collection: learn
     children:
