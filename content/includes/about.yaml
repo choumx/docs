@@ -1,3 +1,35 @@
+hero:
+  title@: AMP?
+  description@: AMP provides a great user experience across many platforms
+
+cta:
+  - title@: What is AMP?
+    description@: Learn about its benefits and core
+    cta@: Learn More
+    url: /learn/overview/
+
+  - title@: How AMP works
+    description@: Lorem ipsum dolor sit amet, consectetur
+    cta@: Learn More
+    url: /learn/about-how/
+
+  - title@: AMP formats and use cases
+    description@: Improving URLs for AMP pages
+    cta@: Learn More
+    url: /learn/amp-design-principles/
+
+showcase:
+  title@: Showcase
+  description@: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  cta@: View Showcases
+  url: /learn/showcases/
+
+casestudies:
+  title@: Case Studies
+  description@: Learn about the success stories with AMP.
+  cta@: View Case Studies
+  url: /case-studies/
+
 large_cta:
   title@: Learn how to build AMP pages and AMPHTML ads
   cta@: Start Building

@@ -2,14 +2,42 @@
 $title: Uses
 class: amp-uses
 
-stylesheet: pages/uses.css
+stylesheet: pages/about.css
 
 components:
 ---
 
 {% set about = g.doc('/content/includes/about.yaml', locale=doc.locale) %}
 
-<div>About PAGE</div>
+<div class="about-page">
+  <div class="about-hero about-section">
+    <h1 class="about-title">{{_(about.hero.title)}}</h1>
+    <h2 class="about-description about-section-description">{{_(about.hero.description)}}</h2>
+  </div>
+  <section class="about-section about-cta-wrapper">
+    {% for cta in about.cta  %}
+      <a class="about-cta" href="{{cta.url}}">
+        <h3 class="about-cta-title">{{_(cta.title)}}</h3>
+        <h4 class="about-cta-description about-section-description">{{_(cta.description)}}</h4>
+        <div class="about-cta-link-wrapper">
+          <div class="about-cta-link about-section-link">{{_(cta.cta)}}</div>
+        </div>
+      </a>
+    {% endfor %}
+  </section>
+  <section class="about-showcase-section about-section">
+    <div class="h1 about-section-title">{{_(about.showcase.title)}}</div>
+    <div class="h2 about-section-description">{{_(about.showcase.description)}}</div>
+    <a class="about-section-link" href="{{about.showcase.url}}">{{_(about.showcase.cta)}}</a>
+  </section>
+  <section class="about-cards-section">CARDS</section>
+  <section class="about-casestudies-section about-section">
+    <div class="h1 about-section-title">{{_(about.casestudies.title)}}</div>
+    <div class="h2 about-section-description">{{_(about.casestudies.description)}}</div>
+    <a class="about-section-link" href="{{about.casestudies.url}}">{{_(about.casestudies.cta)}}</a>
+  </section>
+  <section class="about-links-section">LINKS</section>
+</div>
 
 {% with large_cta = about.large_cta %}
 {% include "/views/partials/large-cta.html" %}
