@@ -1,0 +1,16 @@
+---
+$title: Uses
+class: amp-uses
+
+stylesheet: pages/uses.css
+
+components:
+---
+
+{% set about = g.doc('/content/includes/about.yaml', locale=doc.locale) %}
+
+<div>About PAGE</div>
+
+{% with large_cta = about.large_cta %}
+{% include "/views/partials/large-cta.html" %}
+{% endwith %}
